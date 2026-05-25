@@ -23,8 +23,8 @@ public:
         for(int i = 0; i < n; i++) {
             if(!rechable[i])     continue;
 
-            int start = max(i+minJump, farthest);
-            int end = min(i+maxJump, n-1);
+            int start = max(i + minJump, farthest + 1);
+            int end = min(i + maxJump, n - 1);
 
             for(int j = start; j <= end; j++) {
                 if(s[j] == '0')
